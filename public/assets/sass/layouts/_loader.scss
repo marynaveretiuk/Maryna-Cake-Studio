@@ -1,0 +1,68 @@
+@use "../base" as *;
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+
+  &-content {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &-main {
+    color: #000000;
+    font-weight: 500;
+    margin: 0;
+    font-size: 2.6em;
+    line-height: 1.2;
+    opacity: 0;
+
+    @include xs {
+      font-size: 1.8em;
+    }
+
+    @include vxs {
+      font-size: 1.4em;
+    }
+  }
+
+  &-word-wrap {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 2.6em;
+    line-height: 1.2;
+    height: 1.2em;
+
+    @include xs {
+      font-size: 1.8em;
+    }
+
+    @include vxs {
+      font-size: 1.4em;
+    }
+  }
+
+  &-heading {
+    color: #000000;
+    font-weight: 200;
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.2;
+    flex-shrink: 0;
+    text-align: center;
+    opacity: 0;
+  }
+}

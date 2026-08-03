@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+/* =========================== */
+/* ::::::::: Fancybox :::::::: */
+/* =========================== */
+
+.f-button {
+  border-radius: 0;
+}
+
+.f-html:has(.media-player) {
+  --f-html-padding: 0;
+  --f-html-bg: transparent;
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+}
+
+.fancybox__dialog:has(.media-player) :empty {
+  display: flex;
+}

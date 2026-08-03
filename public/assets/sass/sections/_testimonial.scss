@@ -1,0 +1,57 @@
+.testimonial {
+  &__card {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 48px;
+    background: #fbfafa;
+  }
+}
+
+.customer {
+  &__quotes {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 30px 0;
+    text-wrap: balance;
+  }
+
+  &__avatar {
+    width: 96px !important;
+    height: 96px !important;
+    border-radius: 50%;
+    position: absolute;
+    top: -48px;
+    object-fit: cover;
+    object-position: top;
+    overflow-clip-margin: unset;
+  }
+
+  &__name {
+    font-size: 18px;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+}
+
+.btn {
+  &__group {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-top: 2rem;
+
+    svg {
+      width: 10px;
+    }
+  }
+
+  &__prev,
+  &__next {
+    cursor: pointer;
+  }
+}

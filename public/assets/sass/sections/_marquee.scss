@@ -1,0 +1,8 @@
+.rfm-marquee-container {
+  mask-image: linear-gradient(to right, transparent 0%, #ffffff 18%, #ffffff 80%, transparent 100%);
+
+  .rfm-child {
+    margin-right: 5rem;
+  }
+}
+

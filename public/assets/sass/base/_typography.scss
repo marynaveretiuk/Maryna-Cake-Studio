@@ -1,0 +1,167 @@
+@use "../abstracts" as *;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: $body-font;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  color: $body-color;
+  line-height: $body-line-height;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Full-height column so the (clip-path) reveal footer can be pushed to the
+   bottom on short pages — otherwise it gets clipped out of view. */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+}
+
+button:focus,
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+img:not([draggable]),
+embed,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $border-color;
+}
+
+th {
+  font-weight: 700;
+  color: $title-color;
+}
+
+td,
+th {
+  border: 1px solid $border-color;
+  padding: 9px 12px;
+}
+
+a {
+  color: $theme-color;
+  text-decoration: none;
+  outline: 0;
+  transition: all ease 0.3s;
+
+  &:hover {
+    color: $title-color;
+  }
+
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+button {
+  transition: all ease 0.3s;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+ins {
+  text-decoration: none;
+}
+
+pre {
+  font-family: $body-font;
+  background: #f5f5f5;
+  color: #666;
+  font-size: 14px;
+  margin: 20px 0;
+  overflow: auto;
+  padding: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+p {
+  font-family: $body-font;
+  margin: 0 0 18px 0;
+  color: $body-color;
+  line-height: $p-line-height;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+p a,
+span a {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+  font-family: $title-font;
+  color: $title-color;
+  letter-spacing: $title-letter-spacing;
+  text-transform: uppercase;
+  font-weight: 600;
+}

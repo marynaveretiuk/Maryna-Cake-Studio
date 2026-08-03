@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.title-section {
+  text-align: center;
+  margin-bottom: var(--section-title-space);
+  text-wrap: balance;
+}
+
+.title-section-small {
+  text-transform: none;
+  text-wrap: balance;
+}
+
+.space {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+.section-bg {
+  background-color: var(--section-bg);
+}

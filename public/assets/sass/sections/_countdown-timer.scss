@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+.countdown-timer {
+  font-size: 4em;
+  margin: 0 auto;
+  line-height: 65px;
+  display: flex;
+  color: #000000;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 80px;
+
+  div {
+    display: flex;
+    font-weight: 300;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: flex;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  @include md {
+    flex-wrap: wrap;
+  }
+}

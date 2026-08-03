@@ -1,0 +1,33 @@
+html.lenis {
+  height: auto;
+
+  body {
+    height: auto;
+  }
+}
+
+.lenis {
+  &:not(.lenis-autoToggle).lenis-stopped {
+    overflow: clip;
+  }
+
+  [data-lenis-prevent],
+  [data-lenis-prevent-wheel],
+  [data-lenis-prevent-touch],
+  [data-lenis-prevent-vertical],
+  [data-lenis-prevent-horizontal] {
+    overscroll-behavior: contain;
+  }
+}
+
+.lenis.lenis-smooth {
+  iframe {
+    pointer-events: none;
+  }
+}
+
+.lenis.lenis-autoToggle {
+  transition-property: overflow;
+  transition-duration: 1ms;
+  transition-behavior: allow-discrete;
+}

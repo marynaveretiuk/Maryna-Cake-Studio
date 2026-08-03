@@ -1,0 +1,31 @@
+$theme-color: #000000;
+$title-color: #000000;
+$body-color: #000000;
+$border-color: #f1f1f1;
+$section-bg: #fbfafa;
+$footer-color: #f8fafc;
+
+$section-space: 140px;
+$section-title-space: 70px;
+
+$title-font: "Dosis", sans-serif;
+$body-font: "Source Sans 3", sans-serif;
+$icon-font: "Font Awesome 7 Pro";
+
+$title-letter-spacing: 2px;
+
+$body-font-size: 15px;
+$body-line-height: 25px;
+$body-font-weight: 300;
+$p-line-height: 1.75;
+
+// Responsive breakpoints
+$vxs: 375px;     // very small phones
+$xs:  575.98px;  // phones        — Bootstrap sm edge
+$sm:  767.98px;  // large phones  — Bootstrap md edge
+$md:  991.98px;  // tablets       — Bootstrap lg edge
+$lg:  1199.98px; // laptops       — Bootstrap xl edge
+$xl:  1299px;    // small desktops
+$ml:  1399.98px; // desktops      — Bootstrap xxl edge
+$xxl: 1500px;    // large desktops
+$hd:  1920px;    // min-width: extra-large screens / TVs

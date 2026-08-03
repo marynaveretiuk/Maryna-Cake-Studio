@@ -1,0 +1,174 @@
+@use "../abstracts" as *;
+
+#contact-form {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    background: transparent;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid $border-color;
+    font-size: 14px;
+    padding: 5px 15px;
+    outline: none;
+    -webkit-transition: all 0.3s !important;
+    -moz-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+  }
+
+  textarea {
+    width: 100%;
+    background: transparent;
+    font-size: 14px;
+    padding: 15px;
+    border: 1px solid $border-color;
+    outline: none;
+    resize: none;
+    -webkit-transition: all 0.3s !important;
+    -moz-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+  }
+
+  input[type="submit"] {
+    color: #fff;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 16px;
+    background: #000;
+    border: none;
+    font-weight: 400;
+    font-family: dosis, sans-serif;
+    letter-spacing: 2px;
+    padding: 13px 28px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contact-form__field {
+    margin: 0 0 1rem;
+  }
+
+  .contact-form__grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message-success {
+    text-align: left;
+    color: #000000;
+    font-weight: 500;
+    font-size: 15px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #84e11f;
+    padding: 8px 12px 8px 12px;
+    animation: fadeIn 0.5s ease forwards;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    line-height: 25px;
+
+    i {
+      color: #84e11f;
+      padding-right: 23px;
+    }
+
+    &.fade-out {
+      animation: fadeOut 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+  }
+}
+
+.map-wrapper {
+  .contact-info-box {
+    padding-left: 15px;
+
+    h3 {
+      font-weight: 600;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    ul {
+      list-style: none;
+      line-height: 25px;
+      padding: 0;
+      margin-bottom: 0;
+      text-align: left;
+      position: relative;
+
+      li {
+        margin-top: 0;
+        font-weight: 400;
+        color: #000;
+        font-size: 13px;
+
+        i {
+          margin-right: 5px;
+          color: #000;
+          margin-bottom: 15px;
+        }
+      }
+
+      a {
+        max-width: 100%;
+        color: #000;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .map-zoom-in-btn,
+  .map-zoom-out-btn {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+    margin-left: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-repeat: no-repeat;
+    background-size: 32px 64px;
+    background-image: url("/assets/img/map/icon-controller.svg");
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .map-zoom-in-btn {
+    background-position: 50% 0;
+    margin-top: 50px;
+    margin-bottom: 1px;
+  }
+
+  .map-zoom-out-btn {
+    background-position: 50% -32px;
+  }
+
+  .map-zoom-in-btn:hover,
+  .map-zoom-out-btn:hover {
+    background-color: #000000;
+  }
+}

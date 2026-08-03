@@ -1,0 +1,70 @@
+@use "../abstracts" as *;
+
+.pricing-box {
+  border: 1px solid #000;
+  padding: 2.5rem;
+  text-align: center;
+
+  .card-header {
+    text-align: center;
+  }
+
+  .card-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .card-body {
+    ul,
+    li {
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0.25rem 0;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+
+      i {
+        margin-right: 5px;
+        color: #000;
+      }
+    }
+
+    h3 {
+      margin: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+
+    .pricing-button {
+      color: #fff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 400;
+      cursor: pointer;
+      border: none;
+      background: #000;
+      font-family: $title-font;
+      letter-spacing: 2px;
+      padding: 9px 28px;
+      display: inline-block;
+    }
+  }
+
+  hr {
+    background: #ededed;
+    height: 1px;
+    border: none;
+    opacity: 1;
+  }
+}

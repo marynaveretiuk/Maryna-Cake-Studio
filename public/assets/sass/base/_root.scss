@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+:root {
+  --theme-color: #{$theme-color};
+  --title-color: #{$title-color};
+  --body-color: #{$body-color};
+  --border-color: #{$border-color};
+  --footer-color: #{$footer-color};
+
+  --section-space: #{$section-space};
+  --section-title-space: #{$section-title-space};
+  --section-bg: #{$section-bg};
+
+  --title-font: #{$title-font};
+  --body-font: #{$body-font};
+  --icon-font: #{$icon-font};
+
+  --title-letter-spacing: #{$title-letter-spacing};
+}

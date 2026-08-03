@@ -1,0 +1,35 @@
+.counter {
+  text-align: center;
+
+  &-icon {
+    i {
+      max-width: 100%;
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      font-size: 25px;
+      border-radius: 50%;
+      border-bottom: none;
+      color: #000;
+    }
+  }
+
+  &-value {
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 12px;
+    padding-top: 0;
+    margin-bottom: 5px;
+    margin-top: 15px;
+
+    &::after {
+      content: "//";
+      display: block;
+      margin: 15px 0 10px 5px;
+      font-size: 12px;
+    }
+  }
+}

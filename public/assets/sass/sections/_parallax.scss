@@ -1,0 +1,27 @@
+.parallax {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 630px;
+  pointer-events: none;
+
+  .info {
+    text-align: center;
+    width: 100%;
+    display: table;
+    height: 100%;
+    position: absolute;
+
+    h1 {
+      font-weight: 400;
+      font-size: 2.4em;
+      color: #000;
+      letter-spacing: 0.40em;
+      text-transform: uppercase;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}

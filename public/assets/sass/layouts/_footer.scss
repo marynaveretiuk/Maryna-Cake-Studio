@@ -1,0 +1,95 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+footer {
+  background-color: var(--footer-color);
+  padding: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  height: 240px;
+  margin-top: auto;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    a {
+      display: flex;
+    }
+  }
+
+  .sticky-footer {
+    bottom: 0;
+    left: 0;
+    padding: 80px;
+    width: 100%;
+    position: fixed;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links {
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      li {
+        list-style: none;
+
+        a {
+          color: #000;
+          font-size: 12px;
+          display: block;
+          margin: 0 15px 15px;
+          position: relative;
+          text-transform: uppercase;
+          background-color: initial;
+          letter-spacing: 2px;
+          font-weight: 400;
+          font-family: $title-font;
+        }
+      }
+    }
+  }
+
+  @include sm {
+    padding: 60px 20px;
+
+    .sticky-footer {
+      padding: 60px 20px;
+    }
+  }
+
+  @include xs {
+    height: 280px;
+    padding: 40px 16px;
+
+    .sticky-footer {
+      height: 280px;
+      padding: 40px 16px;
+    }
+
+    .social-links ul li a {
+      margin: 0 9px 12px;
+    }
+
+    .copyright {
+      flex-wrap: wrap;
+    }
+  }
+}
