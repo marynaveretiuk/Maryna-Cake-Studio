@@ -3,7 +3,7 @@ import MobileNav from "./component/MobileNav";
 import HeaderCart from "./component/HeaderCart";
 import SlideLink from "@/components/common/SlideLink";
 
-// Site header - logo, nav, and cart dropdown.
+// Site header
 export default function Header() {
   return (
     <header>
@@ -11,15 +11,16 @@ export default function Header() {
         <div className="row">
           <div className="col-md-12">
             <div className="header-container">
-              {/* Logo Area */}
+              {/* Logo */}
               <div className="logo">
-                <h3>
-                  <SlideLink href="/">GLACIER</SlideLink>
-                </h3>
+                <h2>
+                  <SlideLink href="/">MARYNA</SlideLink>
+                </h2>
+                <span>CAKE STUDIO</span>
               </div>
 
               <div className="header-inner-box">
-                {/* Main Menu Area */}
+                {/* Navigation */}
                 <nav>
                   <div className="menu-container">
                     <ul>
@@ -28,10 +29,10 @@ export default function Header() {
                   </div>
                 </nav>
 
-                {/* Shop Cart Area */}
+                {/* Cart */}
                 <HeaderCart />
 
-                {/* Mobile Menu Area */}
+                {/* Mobile menu */}
                 <MobileNav />
               </div>
             </div>
