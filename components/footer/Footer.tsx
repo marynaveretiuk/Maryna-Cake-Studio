@@ -46,7 +46,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.facebook.com/YOUR_FACEBOOK_PAGE"
+              href="https://www.facebook.com/marynacakestudio"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
