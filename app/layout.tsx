@@ -9,20 +9,22 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import "../public/assets/css/vendor.css";
 import "../public/assets/sass/app.scss";
 
-import { Dosis, Source_Sans_3 } from "next/font/google";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { ViewTransitions } from "next-view-transitions";
 import Providers from "@/context/Providers";
 
-const dosis = Dosis({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600"],
-  variable: "--title-font",
+  weight: ["400", "500", "600"],
+  variable: "--heading-font",
+  display: "swap",
 });
 
-const sourceSans3 = Source_Sans_3({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["300", "400", "600"],
+  weight: ["300", "400", "500", "600"],
   variable: "--body-font",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -37,7 +39,7 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html lang="en">
-        <body className={`body ${dosis.variable} ${sourceSans3.variable}`}>
+        <body className={`body ${cormorant.variable} ${manrope.variable}`}>
           <Providers>{children}</Providers>
         </body>
       </html>

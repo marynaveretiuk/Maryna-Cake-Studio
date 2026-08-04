@@ -11,8 +11,7 @@
   --section-title-space: #{$section-title-space};
   --section-bg: #{$section-bg};
 
-  --title-font: #{$title-font};
-  --body-font: #{$body-font};
+  /* Fonts are provided by next/font in app/layout.tsx */
   --icon-font: #{$icon-font};
 
   --title-letter-spacing: #{$title-letter-spacing};
