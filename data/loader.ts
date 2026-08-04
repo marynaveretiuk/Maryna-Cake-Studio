@@ -6,7 +6,13 @@ export interface Loader {
 }
 
 export const loader = {
-  enabled: true, // set false to skip the intro loader
+  enabled: false, // set false to skip the intro loader
   mainWord: "Glacier",
-  words: ["Art Direction", "Graphic Design", "UI/UX Design", "Web Development", "Product Design"],
+  words: [
+    "Art Direction",
+    "Graphic Design",
+    "UI/UX Design",
+    "Web Development",
+    "Product Design",
+  ],
 } satisfies Loader;

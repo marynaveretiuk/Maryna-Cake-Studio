@@ -1,51 +1,83 @@
-"use client";
+import Image from "next/image";
+import SlideLink from "@/components/common/SlideLink";
 
-import { useRef, useState } from "react";
-import WorkStyleClassic from "@/components/portfolio/style/WorkStyleClassic";
-import PortfolioFilter from "@/components/portfolio/PortfolioFilter";
-import PaginationLoadMore from "@/components/portfolio/pagination/PaginationLoadMore";
-import { portfolioData } from "@/data/portfolio";
-
-// Classic portfolio: large 2x2 feature tiles in an Isotope masonry grid.
-const BIG_SLUGS = new Set(["dance", "dream", "phone"]);
-
-const WORKS_SHOWN = 10; // works loaded before "Load More"
-const WORKS_PER_LOAD = 3; // works revealed per "Load More" click
+const collections = [
+  {
+    id: 1,
+    title: "Birthday Cakes",
+    href: "/birthday-cakes",
+    image: "/assets/cakes/birthday-cakes.jpeg",
+  },
+  {
+    id: 2,
+    title: "Kids' Cakes",
+    href: "/kids-cakes",
+    image: "/assets/cakes/kids-cakes.jpeg",
+  },
+  {
+    id: 3,
+    title: "Wedding Cakes",
+    href: "/wedding-cakes",
+    image: "/assets/cakes/wedding-cakes1.jpeg",
+  },
+  {
+    id: 4,
+    title: "Baptism Cakes",
+    href: "/baptism-cakes",
+    image: "/assets/cakes/baptism-cakes.jpeg",
+  },
+  {
+    id: 5,
+    title: "Mousse Cakes",
+    href: "/mousse-cakes",
+    image: "/assets/cakes/mousse-cakes.jpeg",
+  },
+  {
+    id: 6,
+    title: "Desserts",
+    href: "/desserts",
+    image: "/assets/cakes/desserts.jpeg",
+  },
+];
 
 export default function PortfolioClassic() {
-  const [visibleCount, setVisibleCount] = useState(WORKS_SHOWN);
-  const gridRef = useRef<HTMLDivElement>(null);
-
-  // All works render; PortfolioFilter shows the loaded ones. Load More raises it.
-  const hasMore = visibleCount < portfolioData.length;
-
   return (
-    <section className="portfolio-section space pt-0">
+    <section className="collections-section space">
       <div className="container">
-        <div className="portfolio-classic">
-          <PortfolioFilter
-            gridRef={gridRef}
-            columnWidth=".portfolio-classic__sizer"
-            count={visibleCount}
-          />
+        <div className="collections-heading">
+          <p className="collections-eyebrow">Explore</p>
+          <h2>Our Signature Collections</h2>
+        </div>
 
-          <div className="row portfolio-classic__grid" ref={gridRef}>
-            <div className="portfolio-classic__sizer col-12 col-sm-6 col-md-3" />
+        <div className="row g-4">
+          {collections.map((collection) => (
+            <div key={collection.id} className="col-12 col-sm-6 col-lg-4">
+              <SlideLink href={collection.href} className="collection-card">
+                <div
+                  className="collection-card__image"
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    height: "520px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <Image
+                    src={collection.image}
+                    alt={collection.title}
+                    fill
+                    sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
 
-            {portfolioData.map((work, i) => (
-              <WorkStyleClassic
-                key={work.id}
-                work={work}
-                big={BIG_SLUGS.has(work.slug)}
-                loaded={i < visibleCount}
-              />
-            ))}
-          </div>
-
-          <PaginationLoadMore
-            hasMore={hasMore}
-            onLoadMore={() => setVisibleCount((count) => count + WORKS_PER_LOAD)}
-          />
+                <div className="collection-card__content">
+                  <h3>{collection.title}</h3>
+                  <span>View Collection</span>
+                </div>
+              </SlideLink>
+            </div>
+          ))}
         </div>
       </div>
     </section>
