@@ -1,31 +1,103 @@
+.parallax-section {
+  width: 100%;
+}
+
 .parallax {
   position: relative;
-  background-color: #f5f3f1;
   width: 100%;
   height: 700px;
+  overflow: hidden;
+  background-color: #f5f3f1;
   pointer-events: none;
 
+  .jarallax-img {
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+
   .info {
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-  
-      width: 48%;
-      padding-left: 9%;
-      padding-top: 170px;
-      text-align: left;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 48%;
+    padding: 170px 0 0 9%;
+    text-align: left;
 
     h1 {
-      font-weight: 400;
-      font-size: 2.4em;
+      max-width: 620px;
+      margin: 0;
       color: #000;
-      letter-spacing: 0.22em;
+      font-family: var(--heading-font), serif;
+      font-size: clamp(48px, 5vw, 76px);
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      line-height: 1.05;
       text-transform: uppercase;
-      display: table-cell;
-      vertical-align: middle;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .parallax {
+    height: 720px;
+
+    .info {
+      width: 58%;
+      padding-left: 6%;
+
+      h1 {
+        font-size: 54px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .parallax {
+    height: 700px;
+    min-height: 700px;
+
+    .jarallax-img {
+      object-fit: cover !important;
+      object-position: 68% center !important;
+    }
+
+    .info {
+      align-items: flex-start;
+      width: 100%;
+      padding: 150px 24px 0;
+      text-align: left;
+
+      h1 {
+        max-width: 285px;
+        font-size: 39px;
+        letter-spacing: 0.07em;
+        line-height: 1.08;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .parallax {
+    height: 660px;
+    min-height: 660px;
+
+    .jarallax-img {
+      object-position: 72% center !important;
+    }
+
+    .info {
+      padding: 140px 20px 0;
+
+      h1 {
+        max-width: 250px;
+        font-size: 35px;
+        letter-spacing: 0.055em;
+      }
     }
   }
 }

@@ -8,7 +8,7 @@ export default function AboutPreview() {
         <div className="about-preview__grid">
           <div className="about-preview__image">
             <Image
-              src="/assets/cakes/about-maryna3.jpg"
+              src="/assets/cakes/about-maryna3.JPG"
               alt="Maryna, founder of Maryna Cake Studio"
               fill
               sizes="(max-width: 991px) 100vw, 50vw"

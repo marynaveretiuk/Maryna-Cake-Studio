@@ -9,8 +9,8 @@ export default function Parallax() {
       <Jarallax
         className="parallax"
         options={{
-          speed: 0.8,
-          imgSize: "auto 80%",
+          speed: 0.35,
+          imgSize: "cover",
           imgPosition: "center center",
           imgRepeat: "no-repeat",
         }}
