@@ -31,7 +31,7 @@ export default function Parallax() {
           </RevealTitle>
 
           <SlideLink href="/contact-v1" className="hero-button">
-            Design Your Cake
+            Order Your Cake
           </SlideLink>
         </div>
       </Jarallax>

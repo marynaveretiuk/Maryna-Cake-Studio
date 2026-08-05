@@ -15,15 +15,10 @@ export default function Footer() {
 
         <nav className="site-footer__links">
           <SlideLink href="/">Home</SlideLink>
-
-          <SlideLink href="/portfolio-classic">Gallery</SlideLink>
-
+          <SlideLink href="/gallery">Gallery</SlideLink>
           <SlideLink href="/#flavors">Flavors</SlideLink>
-
           <SlideLink href="/about-me">About</SlideLink>
-
           <SlideLink href="/faq">FAQ</SlideLink>
-
           <SlideLink href="/contact-v1">Contact</SlideLink>
         </nav>
 
@@ -49,7 +44,6 @@ export default function Footer() {
 
         <div className="site-footer__bottom">
           <p>© {new Date().getFullYear()} Maryna Cake Studio</p>
-
           <p>Massachusetts • By appointment only</p>
         </div>
       </div>
