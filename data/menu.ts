@@ -25,7 +25,7 @@ export const menuItems = [
   {
     id: 4,
     label: "About",
-    href: "/about",
+    href: "/about-me",
   },
   {
     id: 5,

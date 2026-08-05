@@ -1,20 +1,18 @@
 import Header from "@/components/header/Header";
-import Parallax from "@/components/about/about-me/Parallax";
-import Experience from "@/components/about/about-me/Experience";
-import Features from "@/components/about/about-me/Features";
+import AboutMaryna from "@/components/about/about-me/AboutMaryna";
 import Footer from "@/components/footer/Footer";
 
 export const metadata = {
-  title: "About Me | Maryna Cake Studio",
+  title: "About Maryna | Maryna Cake Studio",
+  description:
+    "Meet Maryna, founder and cake artist behind Maryna Cake Studio in Massachusetts.",
 };
 
-export default function AboutMe() {
+export default function AboutMePage() {
   return (
     <>
       <Header />
-      <Parallax />
-      <Experience />
-      <Features />
+      <AboutMaryna />
       <Footer />
     </>
   );

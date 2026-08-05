@@ -1679,3 +1679,209 @@ header .menu-container>ul>li>a * {
     padding-bottom: 22px;
   }
 }
+
+/* ==================================================
+   About Maryna
+================================================== */
+
+.about-maryna {
+  background: #fff;
+}
+
+.about-maryna__hero {
+  padding: 150px 0 110px;
+}
+
+.about-maryna__hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: 80px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.about-maryna__hero-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #eee9e3;
+}
+
+.about-maryna__hero-image img {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.about-maryna__hero-content {
+  max-width: 560px;
+}
+
+.about-maryna__eyebrow {
+  margin: 0 0 16px;
+  color: var(--color-gold);
+  font-family: var(--body-font), sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+
+.about-maryna__hero-content h1 {
+  margin: 0 0 28px;
+  color: var(--color-charcoal);
+  font-family: var(--heading-font), serif;
+  font-size: clamp(52px, 5.5vw, 82px);
+  font-weight: 400;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.about-maryna__hero-content p {
+  margin: 0 0 18px;
+  color: rgba(31, 28, 26, 0.66);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-maryna__hero-content .about-maryna__lead {
+  color: var(--color-charcoal);
+  font-size: 17px;
+}
+
+.about-maryna__hero-content .brand-button {
+  margin-top: 16px;
+}
+
+.about-maryna__story {
+  padding: 105px 0;
+  background: #f7f4ef;
+}
+
+.about-maryna__story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 90px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.about-maryna__story-heading h2 {
+  margin: 0;
+  font-family: var(--heading-font), serif;
+  font-size: clamp(46px, 5vw, 72px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.about-maryna__story-copy p {
+  margin: 0 0 20px;
+  color: rgba(31, 28, 26, 0.68);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.about-maryna__story-copy .about-maryna__signature {
+  margin-top: 30px;
+  color: var(--color-charcoal);
+  font-family: var(--heading-font), serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.about-maryna__values {
+  padding: 100px 0 110px;
+}
+
+.about-maryna__values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1100px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(31, 28, 26, 0.14);
+}
+
+.about-maryna__values article {
+  padding: 42px 38px;
+  border-bottom: 1px solid rgba(31, 28, 26, 0.14);
+}
+
+.about-maryna__values article:not(:last-child) {
+  border-right: 1px solid rgba(31, 28, 26, 0.14);
+}
+
+.about-maryna__values span {
+  display: block;
+  margin-bottom: 24px;
+  color: var(--color-gold);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+
+.about-maryna__values h3 {
+  margin: 0 0 14px;
+  font-family: var(--heading-font), serif;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.about-maryna__values p {
+  margin: 0;
+  color: rgba(31, 28, 26, 0.64);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+@media (max-width: 991px) {
+  .about-maryna__hero {
+    padding-top: 130px;
+  }
+
+  .about-maryna__hero-grid,
+  .about-maryna__story-grid {
+    grid-template-columns: 1fr;
+    gap: 52px;
+    max-width: 760px;
+  }
+
+  .about-maryna__hero-image {
+    max-width: 620px;
+  }
+
+  .about-maryna__values-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+
+  .about-maryna__values article:not(:last-child) {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-maryna__hero {
+    padding: 110px 0 70px;
+  }
+
+  .about-maryna__hero-grid {
+    gap: 38px;
+  }
+
+  .about-maryna__hero-content h1 {
+    font-size: 48px;
+  }
+
+  .about-maryna__story,
+  .about-maryna__values {
+    padding: 70px 0;
+  }
+
+  .about-maryna__story-heading h2 {
+    font-size: 46px;
+  }
+
+  .about-maryna__values article {
+    padding: 32px 24px;
+  }
+}
