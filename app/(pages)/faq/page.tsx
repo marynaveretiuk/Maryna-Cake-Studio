@@ -1,18 +1,22 @@
 import Header from "@/components/header/Header";
-import Parallax from "@/components/pages/faq/Parallax";
 import Faq from "@/components/pages/faq/Faq";
 import Footer from "@/components/footer/Footer";
 
 export const metadata = {
-  title: "Faq | Maryna Cake Studio",
+  title: "FAQ | Maryna Cake Studio",
+  description:
+    "Answers about custom cake ordering, deposits, delivery, flavors, design, and booking with Maryna Cake Studio.",
 };
 
 export default function FaqPage() {
   return (
     <>
       <Header />
-      <Parallax />
-      <Faq />
+
+      <main>
+        <Faq />
+      </main>
+
       <Footer />
     </>
   );

@@ -35,6 +35,6 @@ export const menuItems = [
   {
     id: 6,
     label: "Contact",
-    href: "/contact",
+    href: "/contact-v1",
   },
 ] satisfies MenuItem[];
