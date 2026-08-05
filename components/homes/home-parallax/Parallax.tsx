@@ -2,6 +2,7 @@
 
 import { Jarallax, JarallaxImage } from "jarallax/react";
 import RevealTitle from "@/components/common/animation/RevealTitle";
+import SlideLink from "@/components/common/SlideLink";
 
 export default function Parallax() {
   return (
@@ -24,10 +25,14 @@ export default function Parallax() {
           <RevealTitle as="h1" start="top 95%" className="split-words">
             Luxury Cakes
             <br />
-            crafted
+            Crafted
             <br />
             for Your Moments
           </RevealTitle>
+
+          <SlideLink href="/contact-v1" className="hero-button">
+            Design Your Cake
+          </SlideLink>
         </div>
       </Jarallax>
     </section>
